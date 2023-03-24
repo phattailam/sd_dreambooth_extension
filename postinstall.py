@@ -106,9 +106,9 @@ def check_xformers():
     """
     try:
         xformers_version = importlib_metadata.version("xformers")
-        is_xformers_outdated = Version(xformers_version) < Version("0.0.17.dev")
+        is_xformers_outdated = Version(xformers_version) < Version("0.0.16")
         if is_xformers_outdated:
-            pip_install("--no-deps", "xformers==0.0.17.dev476")
+            pip_install("--no-deps", "xformers==0.0.16")
             pip_install("numpy")
             pip_install("pyre-extensions")
     except:
