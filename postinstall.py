@@ -139,7 +139,7 @@ def check_versions():
     required_libs = {
         "torch": ["min", "1.13.1+cu116"],
         "torchvision": ["min", "0.14.1+cu116"],
-        "xformers": ["min", "0.0.17.dev"],
+        "xformers": ["min", "0.0.16"],
         "accelerate": ["min", "0.17.1"],
         "diffusers": ["min", "0.14.0"],
         "transformers": ["min", "4.25.1"],
